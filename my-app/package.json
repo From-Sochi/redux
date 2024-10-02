@@ -56,7 +56,7 @@
   },
   "lint-staged": {
         "**/*.{js,ts,tsx}": [
-            "eslint",
+            
             "npm run lint:fix",
             "git add"
         ]
