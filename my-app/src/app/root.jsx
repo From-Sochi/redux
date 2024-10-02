@@ -1,18 +1,9 @@
+import { productListData } from '../data/product.data'; 
+import ProductCard from '../components/product/card/product-card.component'; 
+
+
 function Root() {
-	return (
-		<div id="main">
-			<div id="menu">
-				<nav>
-					<button>Products</button>
-					<button>Sellers</button>
-				</nav>
-			</div>
-			<div id="main_page">
-				<h2>This is my first Redux app!</h2>
-				<hr></hr>
-			</div>
-		</div>
-	)
+    return <ProductCard {...productListData[0]} />;
 }
 
-export default Root
+export default Root;
