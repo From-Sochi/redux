@@ -19,7 +19,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint ./src --ext .ts,.tsx",
-    "lint:fix": "npm run lint -- --fix"
+    "lint:fix": "npm run lint -- --fix --color"
   },
   "eslintConfig": {
     "extends": [
@@ -56,7 +56,9 @@
   },
   "lint-staged": {
         "**/*.{js,ts,tsx}": [
-            "eslint"
+            "eslint",
+            "npm run lint:fix",
+            "git add"
         ]
     }
 }
