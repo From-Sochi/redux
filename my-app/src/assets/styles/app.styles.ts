@@ -49,3 +49,33 @@ button {
 	font-weight: bold;
 }
 `;
+
+export const Card = styled.div`
+    max-width: 600px;
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+`;
+
+export const Image = styled.img`
+    width: 150px;
+    height: auto;
+    margin-right: 16px;
+`;
+
+export const Title = styled.h2`
+    font-size: 10px;
+    margin: 0;
+`;
+
+export const Description = styled.p`
+    width: 350px;
+    margin: 4px 0;
+`;
+
+export const Price = styled.p`
+    color: green;
+    font-size: 16px;
+    margin-left: auto;
+`;
