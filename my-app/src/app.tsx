@@ -6,6 +6,8 @@ import { GlobalStyle } from './assets/styles/app.styles';
 
 
 function App() {
+
+
     return (
         <>
             <GlobalStyle />

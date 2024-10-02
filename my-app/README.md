@@ -1,41 +1,58 @@
-# Getting Started with Create React App
+## Блок 3: CRUD + Redux  (TBD)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Сделаем страничку для инвентаризации продуктов
+Темплэйт проекта можно взять с первого блока
 
-## Available Scripts
+### Что предстоит освоить
+- [API, CRUD](https://doka.guide/tools/api/)
+- [Redux](https://redux.js.org/)
+- [React Router](https://reactrouter.com/en/main)
 
-In the project directory, you can run:
+### Что предстоит сделать
+- Список продуктов
+- Детальное вью продукта
+- Окно для создания нового продукта
+- Конфирмейшн для удаления продукта
 
-### `npm start`
+[Подробное описание задачи](./03-block/03-block.md)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Темы для ревью
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1. Окружение и зависимости
+    - node.js
+    - npm
+    - create react app
+    - prettier
+    - eslint
+    - MUI
+    - styled components
+    - React Developers Tools
+2. React
+    - JSX, условный рендеринг, работа с коллекциями
+    - props, children
+    - state
+    - особенности работы с событиями
+    - работа с формами
+    - функциональные компоненты и namespaces
+    - Vitrual DOM
+    - Функции Lifecycle, использование интервалов
+    - Ref
+    - React.Fragment
 
-### `npm run build`
+## Дополнительные материалы
+- [React документация](https://ru.reactjs.org/docs/getting-started.html)
+- [Видеокурс](https://www.youtube.com/watch?v=GNrdg3PzpJQ)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### npm vs yarn
+Yarn - альтернативный пакетный менеджер для js. У него есть преимущества, но их немного - поэтому используем npm, как более распространенный.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Eslint + Prettier + Husky
+[Стиль кода. Eslint. Husky.](https://www.youtube.com/playlist?list=PLlwtdxQXoJAvMeHYm-bMyTECOjKAXLFN0)  
+Eslint - инструмент для статического анализа кода js. Позволяет выявить возможные ошибки на ранней стадии, унифицировать код и упростить решение merge-конфликтов.  
+[Husky](https://github.com/typicode/husky) - с помощью него настраиваем запуск линтера перед коммитом (pre-commit) - если проверка не проходит, коммитить не дает.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Подготовка к интервью
+- [Вопросы про React](https://medium.com/@kanby/%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D1%8B-%D0%BF%D1%80%D0%BE-react-%D0%BD%D0%B0-%D1%81%D0%BE%D0%B1%D0%B5%D1%81%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8-3bc1f4e021f4)
+- [Готовимся к собеседованию по React](https://ru.bitdegree.org/rukovodstvo/react-js/)
+- [Вопросы на собеседование React разработчика](https://github.com/likezninjaz/react-ru-interview-questions)
+- [324 вопроса React [ENG]](https://github.com/sudheerj/reactjs-interview-questions)
