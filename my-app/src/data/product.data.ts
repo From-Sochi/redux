@@ -1,12 +1,3 @@
-
-// import { ProductModel } from './product.model';
-
-// export const productListData: ProductModel[] = [
-//     // Здесь должны быть ваши тестовые данные продуктов
-// ];
-
-
-
 import { ProductModel } from './product.model';
 import fetchProducts from '../fetchProducts';
 

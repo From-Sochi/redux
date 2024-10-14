@@ -1,10 +1,9 @@
+import React from 'react';
 import { GlobalStyle } from './assets/styles/app.styles';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Root from './app/root';
-import { productListData } from './data/product.data';
-import ProductCard from './components/product/card/product-card.component';
+import ProductListContainer from './components/product/list/product-list.container';
 
-const router = createBrowserRouter([{ path: '/', element: <Root /> }]);
+const router = createBrowserRouter([{ path: '/', element: <ProductListContainer /> }]);
 
 function App() {
     return (
@@ -16,3 +15,4 @@ function App() {
 }
 
 export default App;
+

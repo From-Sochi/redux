@@ -1,8 +1,24 @@
 import { productListData } from '../data/product.data';
 import ProductCard from '../components/product/card/product-card.component';
+import { GlobalStyle, TitleCatalog, CardContainer } from '../assets/styles/app.styles';
+// import { nanoid } from '@reduxjs/toolkit';
 
 function Root() {
-    return <>{productListData.length > 0 ? <ProductCard {...productListData[0]} /> : <p>Loading products...</p>}</>;
+    const productsToShow = productListData.slice(0, 10);
+
+    return (
+        <>
+            <GlobalStyle />
+            <TitleCatalog>Catalog</TitleCatalog>
+            <CardContainer>
+                {productsToShow.length > 0 ? (
+                    productsToShow.map(product => <ProductCard key={product.id} {...product} />)
+                ) : (
+                    <p>Loading products...</p>
+                )}
+            </CardContainer>
+        </>
+    );
 }
 
 export default Root;
