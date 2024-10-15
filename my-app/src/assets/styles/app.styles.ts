@@ -58,7 +58,7 @@ button {
 
 export const CardContainer = styled.div`
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 20px;
     width: 100%;
     padding: 0 100px;
@@ -168,13 +168,14 @@ export const Title = styled.h2`
     }
 `;
 
-export const Description = styled.p`
+export const description = styled.p`
     flex-grow: 1;
-    font-size: 20px;
+    font-size: 10px;
     overflow: hidden;
-    overflow-y: auto;
-    min-height: 80px;
-    max-height: 200px;
+    // overflow-y: auto;
+    // min-height: 80px;
+    // height: 100px;
+    // max-height: 200px;
     margin: 4px 0;
     padding-right: 10px;
 
@@ -205,4 +206,24 @@ export const Description = styled.p`
 export const Price = styled.p`
     color: green;
     margin-left: auto;
+`;
+
+export const Button = styled.button`
+    background-color: rgb(255 144 0 / 67%);
+    color: black;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease, transform 0.2s ease;
+
+    &:hover {
+        background-color: rgb(255 144 0);
+        color: white;
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
 `;
