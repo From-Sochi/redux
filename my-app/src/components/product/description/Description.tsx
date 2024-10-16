@@ -1,5 +1,6 @@
 import { useState, useCallback, useMemo } from 'react';
 import { Button } from '../../../assets/styles/app.styles';
+
 const DEFAULT_MAX_LENGTH = 50;
 
 type DescriptionProps = {

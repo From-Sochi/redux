@@ -1,6 +1,6 @@
 import React, { memo, FC } from 'react';
 import { ProductModel } from '../../../data/product.model';
-import { Card, Image, Title, description, Price } from '../../../assets/styles/app.styles';
+import { Card, Image, Title, Price } from '../../../assets/styles/app.styles';
 import Description from '../description/Description';
 
 type ProductCardProps = ProductModel;

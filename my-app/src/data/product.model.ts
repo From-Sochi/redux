@@ -4,10 +4,10 @@ export interface ProductModel {
     title: string;
     price: number;
     description: string;
-    category: string;
+    // category: string;
     image: string;
-    rating: {
-        rate: number;
-        count: number;
-    };
+    // rating: {
+    //     rate: number;
+    //     count: number;
+    // };
 }

@@ -172,10 +172,6 @@ export const description = styled.p`
     flex-grow: 1;
     font-size: 10px;
     overflow: hidden;
-    // overflow-y: auto;
-    // min-height: 80px;
-    // height: 100px;
-    // max-height: 200px;
     margin: 4px 0;
     padding-right: 10px;
 
@@ -216,7 +212,9 @@ export const Button = styled.button`
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    transition: all 0.3s ease, transform 0.2s ease;
+    transition:
+        all 0.3s ease,
+        transform 0.2s ease;
 
     &:hover {
         background-color: rgb(255 144 0);
@@ -226,4 +224,14 @@ export const Button = styled.button`
     &:active {
         transform: scale(0.95);
     }
+`;
+
+export const ModalField = styled.div`
+    position: fixed; 
+    bottom: 30px; 
+    right: 30px; 
+    background-color: rgb(178 208 220);
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    z-index: 1000; 
 `;

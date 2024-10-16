@@ -3,8 +3,8 @@ import productReducer from './product.slice';
 
 const store = configureStore({
     reducer: {
-        product: productReducer  // Подключаем редьюсер продукта
-    }
+        product: productReducer,
+    },
 });
 
 export type RootState = ReturnType<typeof store.getState>; // Тип для стейта

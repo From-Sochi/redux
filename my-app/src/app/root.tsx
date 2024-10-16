@@ -1,7 +1,7 @@
 import { productListData } from '../data/product.data';
 import ProductCard from '../components/product/card/product-card.component';
-import { GlobalStyle, TitleCatalog, CardContainer } from '../assets/styles/app.styles';
-// import { nanoid } from '@reduxjs/toolkit';
+import { GlobalStyle, CardContainer } from '../assets/styles/app.styles';
+
 
 function Root() {
     const productsToShow = productListData.slice(0, 10);
@@ -9,7 +9,6 @@ function Root() {
     return (
         <>
             <GlobalStyle />
-            <TitleCatalog>Catalog</TitleCatalog>
             <CardContainer>
                 {productsToShow.length > 0 ? (
                     productsToShow.map(product => <ProductCard key={product.id} {...product} />)
@@ -22,3 +21,7 @@ function Root() {
 }
 
 export default Root;
+
+
+
+

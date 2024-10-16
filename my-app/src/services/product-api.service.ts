@@ -7,3 +7,4 @@ const fetchProductsApi = async (): Promise<AxiosResponse<ProductModel[]>> => {
 };
 
 export { fetchProductsApi };
+
