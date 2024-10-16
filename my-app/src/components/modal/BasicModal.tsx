@@ -1,4 +1,7 @@
 import * as React from 'react';
+import { useDispatch } from 'react-redux'; 
+import { addProductAction } from '../../app/store/product.slice';
+import { ProductModel } from '../../data/product.model';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
@@ -25,11 +28,31 @@ export default function BasicModal() {
     const [imageUrl, setImageUrl] = React.useState('');
     const [description, setDescription] = React.useState('');
 
+    const dispatch = useDispatch();
+
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
+
+        const newProduct: ProductModel = {
+            id: Date.now(), // Генерация уникального ID
+            title,
+            price: Number(price), // Убедитесь, что цена - это число
+            description,
+            image: imageUrl,
+        };
+
+        // Диспатчим действие для добавления продукта
+        dispatch(addProductAction(newProduct));
+
+        // Очищаем поля ввода
+        setTitle('');
+        setPrice('');
+        setImageUrl('');
+        setDescription('');
+
         handleClose();
     };
 
