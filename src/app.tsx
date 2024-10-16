@@ -1,3 +1,4 @@
+import React from 'react';
 import { GlobalStyle } from './assets/styles/app.styles';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import ProductListContainer from './components/product/list/product-list.container';
