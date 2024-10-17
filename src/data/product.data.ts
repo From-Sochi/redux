@@ -1,5 +1,5 @@
 import { ProductModel } from './product.model';
-import fetchProducts from '../fetchProducts';
+import fetchProducts from './fetchProducts';
 
 export const productListData: ProductModel[] = [];
 

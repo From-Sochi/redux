@@ -4,7 +4,7 @@ import { GlobalStyle, CardContainer } from '../assets/styles/app.styles';
 
 
 function Root() {
-    const productsToShow = productListData.slice(0, 10);
+    const productsToShow = productListData;
 
     return (
         <>
