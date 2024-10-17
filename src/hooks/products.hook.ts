@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchProductsApi } from '../services/product-api.service';
-// import { ProductModel } from '../data/product.model';
 import { setProductsAction } from '../app/store/product.slice';
 import { selectProducts } from '../app/store/product/product.selectors';
 
