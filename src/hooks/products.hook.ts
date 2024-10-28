@@ -25,7 +25,7 @@ const useProducts = () => {
         };
 
         fetchProducts();
-    }, [dispatch]); // Убедитесь, что dispatch в зависимостях
+    }, [dispatch]); 
 
     return { products, loading, error };
 };

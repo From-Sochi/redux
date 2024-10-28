@@ -37,9 +37,9 @@ export default function BasicModal() {
         e.preventDefault();
 
         const newProduct: ProductModel = {
-            id: Date.now(), // Генерация уникального ID
+            id: Date.now(), 
             title,
-            price: Number(price), // Убедитесь, что цена - это число
+            price: Number(price), 
             description,
             image: imageUrl,
         };
